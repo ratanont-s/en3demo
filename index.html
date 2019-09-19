@@ -1,95 +1,471 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
 
-    <title>MK Online Delivery</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="bg-red">
-      <div class="alert alert-dismissible fade show" role="alert">
-        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+  <title>MK Online Delivery</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-deepred shadow-sm">
+    <div class="alert alert-dismissible fade show text-center text-light small mb-0" role="alert">
+      เอ็มเคจะทำการเก็บค๊กกี๊บนเว็บไซต์ เพื่อมอบประสอบการที่ดีให้กับคุณลูกค้าและเพื่อปรับปรุงการใช้งานให้ดียิ่งขึ้นต่อไป
+      <button class="btn btn-light btn-sm py-0 ml-2" data-dismiss="alert"><i class="fas fa-thumbs-up text-green"></i>
+        ยอมรับ</button>
+      <a href="javascript:void(0);" class="ml-4 text-light" data-dismiss="alert"><i class="fas fa-times small"></i></a>
+    </div>
+    <div class="container-fluid">
+      <div class="logo">
+        <img src="./assets/images/logo.svg" alt="" class="img-fluid">
+      </div>
+    </div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-      <div class="container-fluid">
-        <div class="logo">
-          <img src="./assets/images/logo.svg" alt="" class="img-fluid">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-fill w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_01.png" alt="">
+                </span>
+                <span class="nav-link-text">โปรโมชั่น</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_02.png" alt="">
+                </span>
+                <span class="nav-link-text">จานเดี่ยว</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_03.png" alt="">
+                </span>
+                <span class="nav-link-text">ชุดสุดคุ้ม</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_04.png" alt="">
+                </span>
+                <span class="nav-link-text">เป็ดย่างและอื่นๆ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_05.png" alt="">
+                </span>
+                <span class="nav-link-text">สุกี้สด</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_06.png" alt="">
+                </span>
+                <span class="nav-link-text">ของทานเล่น</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_07.png" alt="">
+                </span>
+                <span class="nav-link-text">น้ำและขนม</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="nav-link-icon">
+                  <img src="./assets/images/Head_icon_08.png" alt="">
+                </span>
+                <span class="nav-link-text">แสน๊คบ๊อกซ์และจัดเลี้ยง</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+    </nav> -->
+    <nav class="nav-scroller bg-white">
+      <div class="container">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_01.png" alt="">
+              </span>
+              <span class="nav-link-text">โปรโมชั่น</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_02.png" alt="">
+              </span>
+              <span class="nav-link-text">จานเดี่ยว</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_03.png" alt="">
+              </span>
+              <span class="nav-link-text">ชุดสุดคุ้ม</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_04.png" alt="">
+              </span>
+              <span class="nav-link-text">เป็ดย่างและอื่นๆ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_05.png" alt="">
+              </span>
+              <span class="nav-link-text">สุกี้สด</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_06.png" alt="">
+              </span>
+              <span class="nav-link-text">ของทานเล่น</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_07.png" alt="">
+              </span>
+              <span class="nav-link-text">น้ำและขนม</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-icon">
+                <img src="./assets/images/Head_icon_08.png" alt="">
+              </span>
+              <span class="nav-link-text">แสน๊คบ๊อกซ์และจัดเลี้ยง</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Banner -->
+    <section id="banner">
+      <div class="container">
+        <div class="slider">
+          <a href="#">
+            <img src="./assets/images/banner-01.jpg" alt="" class="w-100">
+          </a>
+          <a href="#">
+            <img src="./assets/images/banner-01.jpg" alt="" class="w-100">
+          </a>
+          <a href="#">
+            <img src="./assets/images/banner-01.jpg" alt="" class="w-100">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotions -->
+    <section id="promotions">
+      <div class="container py-lg-4">
+        <div class="sec-header">
+          <h2 class="sec-title">
+            <span class="sec-title-icon">
+              <img src="./assets/images/Head_icon_01.png" alt="">
+            </span>
+            <span class="sec-title-text">โปรโมชั่น</span>
+          </h2>
+          <a href="#" class="view-all">
+            ดูโปรโมชั่นทั้งหมด <i class="fas fa-list-ul"></i>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#" class="card card-promotion">
+              <img src="./assets/images/Pic_01.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="mb-0">อิ่มคุ้มข้าวหมูกรอบ</h4>
+                  <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                    <span class="icon">
+                      + <i class="fas fa-shopping-basket"></i>
+                    </span>
+                    129.-
+                  </button>
                 </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main -->
-    <main>
-      <!-- Banner -->
-      <section id="banner">
-        <div class="container">
-          <div class="slider">
-            <a href="#">
-              <img src="./assets/images/banner-01.jpg" alt="" class="w-100">
-            </a>
-            <a href="#">
-              <img src="./assets/images/banner-01.jpg" alt="" class="w-100">
+                <ul class="card-list">
+                  <li>บะหมี่หยกหมูแดง (แห้ง)</li>
+                  <li>น้ำซุป</li>
+                  <li>ไข่มะตูม</li>
+                </ul>
+              </div>
             </a>
           </div>
+          <div class="col-md-6">
+            <a href="#" class="card card-promotion">
+              <img src="./assets/images/Pic_02.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="mb-0">อิ่มคุ้มข้าวหมูกรอบ</h4>
+                  <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                    <span class="icon">
+                      + <i class="fas fa-shopping-basket"></i>
+                    </span>
+                    129.-
+                  </button>
+                </div>
+                <ul class="card-list">
+                  <li>บะหมี่หยกหมูแดง (แห้ง)</li>
+                  <li>น้ำซุป</li>
+                  <li>ไข่มะตูม</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#" class="card card-promotion">
+              <img src="./assets/images/Pic_01.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="mb-0">อิ่มคุ้มข้าวหมูกรอบ</h4>
+                  <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                    <span class="icon">
+                      + <i class="fas fa-shopping-basket"></i>
+                    </span>
+                    129.-
+                  </button>
+                </div>
+                <ul class="card-list">
+                  <li>บะหมี่หยกหมูแดง (แห้ง)</li>
+                  <li>น้ำซุป</li>
+                  <li>ไข่มะตูม</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#" class="card card-promotion">
+              <img src="./assets/images/Pic_02.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4 class="mb-0">อิ่มคุ้มข้าวหมูกรอบ</h4>
+                  <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                    <span class="icon">
+                      + <i class="fas fa-shopping-basket"></i>
+                    </span>
+                    129.-
+                  </button>
+                </div>
+                <ul class="card-list">
+                  <li>บะหมี่หยกหมูแดง (แห้ง)</li>
+                  <li>น้ำซุป</li>
+                  <li>ไข่มะตูม</li>
+                </ul>
+              </div>
+            </a>
+          </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Best seller -->
+    <section id="bestSeller">
+      <div class="container py-lg-5">
+        <div class="sec-header">
+          <h2 class="sec-title">
+            <span class="sec-title-icon">
+              <img src="./assets/images/Best_Seller.png" alt="">
+            </span>
+            <span class="sec-title-text">สินค้าขายดี</span>
+          </h2>
+        </div>
+        <div class="slider">
+          <a href="#" class="card card-best-seller">
+            <img src="./assets/images/Pic_05.jpg" alt="" class="card-img">
+            <div class="card-body">
+              <div class="card-title">
+                <p class="mb-0">ซุปเปอร์แซ่บ</p>
+                <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                  <span class="icon">
+                    + <i class="fas fa-shopping-basket"></i>
+                  </span>
+                  129.-
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card card-best-seller">
+            <img src="./assets/images/Pic_06.jpg" alt="" class="card-img">
+            <div class="card-body">
+              <div class="card-title">
+                <p class="mb-0">ซุปเปอร์แซ่บ</p>
+                <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                  <span class="icon">
+                    + <i class="fas fa-shopping-basket"></i>
+                  </span>
+                  129.-
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card card-best-seller">
+            <img src="./assets/images/Pic_07.jpg" alt="" class="card-img">
+            <div class="card-body">
+              <div class="card-title">
+                <p class="mb-0">ซุปเปอร์แซ่บ</p>
+                <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                  <span class="icon">
+                    + <i class="fas fa-shopping-basket"></i>
+                  </span>
+                  129.-
+                </button>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="card card-best-seller">
+            <img src="./assets/images/Pic_05.jpg" alt="" class="card-img">
+            <div class="card-body">
+              <div class="card-title">
+                <p class="mb-0">ซุปเปอร์แซ่บ</p>
+                <button class="btn btn-red btn-sm btn-add-cart ml-auto">
+                  <span class="icon">
+                    + <i class="fas fa-shopping-basket"></i>
+                  </span>
+                  129.-
+                </button>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    </footer>
+  <!-- Footer -->
+  <footer class="pt-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col col-sm">
+          <h6>MK Delivery</h6>
+          <div class="row">
+            <div class="col">
+              <ul class="list-unstyled list-link small">
+                <li><a href="#">โปรโมชั่น</a></li>
+                <li><a href="#">เมนูใหม่</a></li>
+                <li><a href="#">อร่อยจานเดี่ยว</a></li>
+                <li><a href="#">อร่อยเป็นชุด</a></li>
+                <li><a href="#">เป็ดย่างและอื่นๆ</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul class="list-unstyled list-link small">
+                <li><a href="#">สุกี้สด</a></li>
+                <li><a href="#">ติ่มซำ</a></li>
+                <li><a href="#">น้ำและขนม</a></li>
+                <li><a href="#">แสน็คบ๊อกซ์</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto col-sm">
+          <h6>Support</h6>
+          <ul class="list-unstyled list-link small">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Term & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">MK restaurant Group</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm">
+          <p>
+            <img src="./assets/images/credit_cards.png" alt="" class="img-fluid">
+          </p>
+        </div>
+        <div class="col-12 col-sm order-sm-first">
+          <ul class="list-inline list-social mb-0">
+            <li class="list-inline-item mr-0">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <span class="fa-stack">
+                  <i class="far fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item mr-0">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <span class="fa-stack">
+                  <i class="far fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item mr-0">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <span class="fa-stack">
+                  <i class="far fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-youtube fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <small class="text-muted">&copy; 2018 MK Restaurants Group PCL., All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Slick js -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-    <!-- Sticky js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
-    <!-- Main js -->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/990479688a.js" crossorigin="anonymous"></script>
+  <!-- Slick js -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <!-- Sticky js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js"></script>
+  <!-- Main js -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,75 @@
+// Promotion
+.card-promotion {
+    border-width: 0;
+
+    .card {
+        &-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            color: $body-color;
+            margin-bottom: 0;
+        }
+
+        &-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            color: $text-muted;
+
+            li {
+                padding-left: .75rem;
+                position: relative;
+                margin-right: 0.5rem;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100%;
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}
+
+// Best seller
+.card-best-seller {
+    border-width: 0;
+    padding: 0 .5rem;
+
+    .card {
+        &-img {
+            border: 1px solid $border-color;
+        }
+
+        &-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            color: $body-color;
+            margin-bottom: 0;
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .btn {
+                font-size: small;
+            }
+        }
+    }
+}

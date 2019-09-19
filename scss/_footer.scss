@@ -1,0 +1,40 @@
+footer {
+    background: $footer-bg url('../images/footer-bg.jpg') no-repeat right bottom;
+    background-size: 100% auto;
+    padding-bottom: 7rem;
+
+    @include media-breakpoint-up(sm) {
+        background-size: auto 250px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-bottom: 0.5rem;
+        background-size: auto 100%;
+    }
+
+    >.container-fluid {
+        max-width: 1440px;
+    }
+
+    .list {
+        &-link {
+            li a {
+                color: $text-muted;
+
+                @include hover {
+                    color: $red;
+                }
+            }
+        }
+
+        &-social {
+            li a {
+                color: $body-color;
+
+                @include hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

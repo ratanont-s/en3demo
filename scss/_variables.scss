@@ -1,10 +1,13 @@
-
 // Colors system
-$red: #D00016;
+$red: #ED2E34;
+$deepred: #D00016;
 $green: #059743;
 
-$theme-colors: (
-  "red": $red,
+$body-bg: #FCFCFC;
+$footer-bg: #E6E6E6;
+
+$theme-colors: ("red": $red,
+  "deepred": $deepred,
   "green": $green,
 );
 
@@ -12,3 +15,11 @@ $theme-colors: (
 $slick-font-path: '../fonts/';
 $slick-loader-path: '../images/';
 $slick-dot-size: 1rem;
+$slick-dot-color-active: $red;
+
+// Fonts
+$font-family-base: "DB HelvethaicaMon X";
+$font-size-base: 1.25rem;
+
+// Links
+$link-hover-decoration: none;

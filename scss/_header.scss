@@ -1,12 +1,55 @@
-header{
-    >.alert{
-        background-color: rgba(black,.15);
+header {
+    >.alert {
+        background-color: rgba(black, .25);
     }
-    .logo{
-        img{
+
+    >.container-fluid {
+        max-width: 1440px;
+    }
+
+    .logo {
+        img {
             height: 75px;
             width: auto;
             object-fit: contain;
         }
     }
+
+    .nav {
+        flex-wrap: nowrap;
+
+        &-scroller {
+            >.container {
+                position: relative;
+                z-index: 2;
+                height: 110px;
+                overflow-y: hidden;
+            }
+        }
+
+        &-link {
+            color: $body-color;
+            white-space: nowrap;
+
+            @include hover {
+                color: $red;
+            }
+
+            &-icon {
+                display: block;
+                margin-bottom: 0.25rem;
+
+                img {
+                    height: 60px;
+                    width: auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+
+.sticky-wrapper {
+    z-index: $zindex-fixed;
+    position: relative;
 }
