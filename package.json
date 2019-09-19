@@ -1,0 +1,13 @@
+{
+  "name": "mk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rathanont/mk.git",
+  "author": "rathanont <rathanont.s@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "slick-carousel": "^1.8.1",
+    "stickyjs": "^1.0.1"
+  }
+}

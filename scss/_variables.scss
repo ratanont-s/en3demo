@@ -1,0 +1,14 @@
+
+// Colors system
+$red: #D00016;
+$green: #059743;
+
+$theme-colors: (
+  "red": $red,
+  "green": $green,
+);
+
+// Slick
+$slick-font-path: '../fonts/';
+$slick-loader-path: '../images/';
+$slick-dot-size: 1rem;
