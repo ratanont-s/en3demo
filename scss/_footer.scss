@@ -2,6 +2,7 @@ footer {
     background: $footer-bg url('../images/footer-bg.jpg') no-repeat right bottom;
     background-size: 100% auto;
     padding-bottom: 7rem;
+    position: relative;
 
     @include media-breakpoint-up(sm) {
         background-size: auto 250px;
