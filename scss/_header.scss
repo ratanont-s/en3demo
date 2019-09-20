@@ -10,10 +10,42 @@ header {
     }
 
     .logo {
-        img {
-            height: 75px;
-            width: auto;
-            object-fit: contain;
+        display: block;
+        height: 75px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .btn-group {
+        // border: 1px solid $dark;
+        // border-radius: 5px;
+
+        .btn {
+            background-color: transparent;
+            border-radius: 5px;
+            color: $white;
+            border-color: $dark;
+
+            &:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-right-width: 0;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &.active {
+                background-color: $white;
+                color: $deepred;
+                border-color: $white;
+                border-radius: 5px !important;
+
+                svg path {
+                    fill: $deepred;
+                }
+            }
         }
     }
 
@@ -46,6 +78,20 @@ header {
                     height: 40px;
                     width: auto;
                     object-fit: contain;
+                }
+            }
+        }
+
+        &-lang {
+            .nav {
+                &-link {
+                    color: $white;
+
+                    &.active {
+                        color: $red;
+                        background-color: $white;
+                        border-radius: 10rem;
+                    }
                 }
             }
         }
